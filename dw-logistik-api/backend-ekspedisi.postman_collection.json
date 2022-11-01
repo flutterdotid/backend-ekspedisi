@@ -1,0 +1,253 @@
+{
+	"info": {
+		"_postman_id": "2d3a5ac6-21bc-4f3e-959a-895e034c9b0f",
+		"name": "backend-ekspedisi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer icV7vD0RROJgneUIp824IX0UbKaJ8FJRokxfQ3hU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get categories",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer icV7vD0RROJgneUIp824IX0UbKaJ8FJRokxfQ3hU"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer xOBvJppLaTeksZq1a5rHGCf0btX39LxlMMMOQET7"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "sdfsd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer xOBvJppLaTeksZq1a5rHGCf0btX39LxlMMMOQET7"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "k4ilham@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Ilham343",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post reset users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer xOBvJppLaTeksZq1a5rHGCf0btX39LxlMMMOQET7"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "k4ilham@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/reset?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"reset"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get id users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer xOBvJppLaTeksZq1a5rHGCf0btX39LxlMMMOQET7"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/users/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update users",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer xOBvJppLaTeksZq1a5rHGCf0btX39LxlMMMOQET7"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete users",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer xOBvJppLaTeksZq1a5rHGCf0btX39LxlMMMOQET7"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/users/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
